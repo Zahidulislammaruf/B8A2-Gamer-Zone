@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content:space-around ;
+    margin: 30px;
+}
+.nav-icon{
+    width: 24px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    gap: 15px;
+}
+
+.nav-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 200px;
+    height: 38px;
+
+}
+.nav_about{
+    display: flex;
+    gap: 1.2rem;
+    color: #3C354F;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-title{
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.goat{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.banner-para{
+    color: #534C64;
+   font-family: Work Sans;
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-transform: lowercase;
+}
+.btn-singup{
+    border: none;
+    padding: 10px 20px;
+    align-items: flex-start;
+    border-radius: 48px;
+    background: #FF42A5;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.btn-go{
+    border: none;
+    padding: 10px 20px;
+    align-items: flex-end;
+    border-radius: 48px;
+    background: #4EC5F7;;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+.gamer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.gamer-para{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.gamer-tittle{
+    text-align: right;
+   font-family: Work Sans;
+    font-size: 3rem;
+   font-weight: 700;
+   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.gamer-para2{
+    width: 520px;
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+.gamer-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 48px;
+    background: #F948B2;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 360px ;
+}
+.para2-1{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+}
+.gamer-img, .banner-img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* for Mobile        */
+@media screen and (max-width : 576px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 10px;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .gamer{
+       flex-direction: column;
+    }
+    .gamer-tittle, .gamer-para, .gamer-para2{
+        text-align: center;
+
+    }
+    .para2-1{
+        font-size: 1.2rem;
+    }
+    .gamer-btn{
+        margin-left: 180px ;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+}
+/* for Tablet        */
+@media screen and (max-width : 960px) and (min-width : 576px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .gamer{
+        flex-direction: column;
+     }
+     .gamer-tittle, .gamer-para, .gamer-para2{
+         text-align: center;
+ 
+     }
+     .para2-1{
+         font-size: 2rem;
+     }
+     .gamer-btn{
+        margin-left: 180px ;
+        margin-bottom: 20px;
+    }
+    
+    
+}
