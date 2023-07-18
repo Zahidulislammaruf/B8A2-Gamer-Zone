@@ -159,10 +159,68 @@ nav a{
     font-weight: 700;
     line-height: 45px;
 }
-.gamer-img, .banner-img{
+.gamer-img, .banner-img, .box-img{
     width: 100%;
     height: auto;
 }
+.online{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.online-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px ;
+}
+.online-title{
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-title1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-para{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.type-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 281px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+}
+.game-type{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    align-items: center;
+ 
+}
+.type-box:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+}
+
 
 
 /* for Mobile        */
@@ -179,7 +237,7 @@ nav a{
     .gamer{
        flex-direction: column;
     }
-    .gamer-tittle, .gamer-para, .gamer-para2{
+    .gamer-tittle, .gamer-para, .gamer-para2, .online-title{
         text-align: center;
 
     }
@@ -190,6 +248,13 @@ nav a{
         margin-left: 180px ;
         margin-bottom: 20px;
     }
+    .online-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .game-type{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
     
     
     
@@ -218,6 +283,12 @@ nav a{
      .gamer-btn{
         margin-left: 180px ;
         margin-bottom: 20px;
+    }
+    .online-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .game-type{
+        grid-template-columns: repeat(1,1fr);
     }
     
     
