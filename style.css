@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+.color-p{
+   color: #F948B2;
+}
 header{
     display: flex;
     justify-content:space-around ;
@@ -204,8 +207,8 @@ nav a{
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 281px;
-    height: 80px;
+    width: 260px;
+    height: 60px;
     border-radius: 50px;
     background: #FFF;
 }
@@ -213,8 +216,9 @@ nav a{
     display: grid;
     align-items: center;
     justify-content: center;
+    gap: 40px 0px;
     grid-template-columns: repeat(5,1fr);
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 6rem;
     margin-bottom: 3rem;
  
@@ -282,6 +286,42 @@ footer{
     margin-top: 30px;
     margin-bottom: 40px;
 }
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 70px;
+}
+.rel-para2{
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+    height: auto;
+}
+.rel-para{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.play-title{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.play-para{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
 
 
 
@@ -299,7 +339,7 @@ footer{
     .banner {
         flex-direction: column-reverse;
     }
-    .gamer{
+    .gamer, .play{
        flex-direction: column;
     }
     .gamer-tittle, .gamer-para, .gamer-para2, .online-title{
@@ -333,6 +373,7 @@ footer{
     
     
     
+    
 }
 /* for Tablet        */
 @media screen and (max-width : 960px) and (min-width : 576px) {
@@ -344,7 +385,7 @@ footer{
     .banner{
         flex-direction: column-reverse;
     }
-    .gamer{
+    .gamer, .play{
         flex-direction: column;
      }
      .gamer-tittle, .gamer-para, .gamer-para2{
