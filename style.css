@@ -148,7 +148,13 @@ nav a{
    margin-left: 250px;
    margin-top: 30px;
    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+   color: #FFF;
+   font-family: Work Sans;
+   font-size: 1.2rem;
+   font-weight: 600;
+   text-transform: uppercase;
 }
+
 .gamer-para2{color: #534C64;
 text-align: right;
 font-family: Work Sans;
@@ -216,14 +222,12 @@ line-height: 45px; /* 187.5% */
     background: #FFF;
 }
 .game-type{
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
     justify-content: center;
-    gap: 40px 0px;
-    grid-template-columns: repeat(5,1fr);
-    margin-top: 1rem;
-    margin-left: 6rem;
-    margin-bottom: 3rem;
+    align-items: center;
+    margin-bottom: 30px;
  
 }
 .type-box:hover{
@@ -318,8 +322,25 @@ footer{
     font-weight: 400;
     line-height: 30px;
 
-
 }
+.play-btn{
+    width: 32px;
+}
+.overly{
+    text-align: center;
+    position: relative;
+    top: -50%;
+    visibility: hidden;
+    color: #FFF;
+}
+.online-box:hover .overly{
+    visibility: visible;
+}
+.online-box:hover .box-img{
+    filter: brightness(45%);
+}
+
+
 
 
 
@@ -354,6 +375,8 @@ footer{
         grid-template-columns: repeat(1,1fr);
     }
     .game-type{
+        display: grid;
+        gap: 10px;
         grid-template-columns: repeat(3,1fr);
         margin-left: 1rem;
     }
@@ -437,8 +460,9 @@ footer{
         grid-template-columns: repeat(1,1fr);
     }
     .game-type{
+        display: grid;
+        gap: 10px;
+        margin-left: 60px;
         grid-template-columns: repeat(2,1fr);
     }
-    
-    
 }
