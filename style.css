@@ -300,8 +300,9 @@ footer{
     height: auto;
 }
 .rel-para{
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    margin-left: 80px;
     
     
 }
@@ -320,6 +321,9 @@ footer{
     font-weight: 400;
     line-height: 30px;
 
+}
+.gamer{
+    display: none;
 }
 
 
@@ -368,6 +372,9 @@ footer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .rel-para,.box-img, .banner-img{
+        max-width: 80%;
+        height: auto;
     
     
     
